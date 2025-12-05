@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "2c762360-987f-4236-90e8-5cda0baa5e2f",
+		"name": "Auth API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50476224",
+		"_collection_link": "https://sohamparikh437-3366869.postman.co/workspace/Soham-Parikh's-Workspace~dfc89733-1b2b-41ef-8295-82635deeed80/collection/50476224-2c762360-987f-4236-90e8-5cda0baa5e2f?action=share&source=collection_link&creator=50476224"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Soham\",\n  \"email\": \"soham@gmail.com\",\n  \"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
